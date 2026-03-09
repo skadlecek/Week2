@@ -59,7 +59,7 @@
                 includesText: 'Includes:',
                 features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
                 buttonText: 'Download',
-                buttonVariant: 'secondary',
+                buttonVariant: 'outline',
             };
             const proPlan = {
                 title: 'Pro',
@@ -72,6 +72,19 @@
                     'Maximum context windows',
                 ],
                 buttonText: 'Get Pro',
+                buttonVariant: 'secondary',
+            };
+            const organizationPlan = {
+                title: 'Organization',
+                price: '$10,000/mo.',
+                includesText: 'Everything in Pro, plus:',
+                features: [
+                    'SSO & advanced security',
+                    'Dedicated support',
+                    'Custom SLA & compliance',
+                    'Volume licensing',
+                ],
+                buttonText: 'Contact sales',
                 buttonVariant: 'primary',
             };
 
@@ -84,6 +97,7 @@
                         {/* This is the same as writing: title="Hobby" price="Free" includesText="Includes:" etc. */}
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
+                        <PricingCard {...organizationPlan} />
                     </div>
                 </>
             );

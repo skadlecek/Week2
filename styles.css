@@ -130,20 +130,6 @@ body {
     background-color: #333;
 }
 
-.download-button.outline {
-    background-color: transparent;
-    border: 2px solid #333;
-    color: #333;
-}
-
-.download-button.outline:hover {
-    background-color: rgba(0, 0, 0, 0.06);
-}
-
-.download-button.outline:active {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
 .page-label {
     position: fixed;
     top: 16px;
